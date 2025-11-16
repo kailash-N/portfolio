@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfol.io</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Portfol.io</div>
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#certification">CERTIFICATION</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" onclick="toggleMenu()">HOME</a>
+        <a href="#experience" onclick="toggleMenu()">EXPERIENCE</a>
+        <a href="#projects" onclick="toggleMenu()">PROJECTS</a>
+        <a href="#certification" onclick="toggleMenu()">CERTIFICATION</a>
+        <a href="#contact" onclick="toggleMenu()">CONTACT</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container1" id="home">
+        <div class="profile">
+            <img id="img1" src="images/profile.JPG">
+        </div>
+        <div class="Name">
+            <p id="name">Kailash N</p>
+            <p id="role">Software Developer</p>
+            <button id="resume">Resume</button>
+        </div>
+
+        <div class="About">
+            <p id="about">About</p>
+            <p id="about-para">I'm a passionate software developer focused on building reliable, efficient, and user-friendly applications. I believe every problem has a simple, elegant solution waiting to be created.</p>
+        </div>
+
+        <div class="Skills">
+            <p id="skills">Skills</p>
+            <div class="skill-list">
+                <div class="skill-item">Python</div>
+                <div class="skill-item">Java</div>
+                <div class="skill-item">Database</div>
+                <div class="skill-item">Web Development</div>
+                <div class="skill-item">Machine Learning</div>
+                <div class="skill-item">Data Analysis</div>
+                <div class="skill-item">DSA</div>
+                <div class="skill-item">OOP</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience Section -->
+    <section class="experience-section fade-in-section" id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-container">
+            <!-- Experience Card 1 -->
+            <div class="experience-card">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-title">Data Analyst / Intern</div>
+                        <div class="exp-company">Learn Basics</div>
+                    </div>
+                    <div class="exp-duration">Sep 2024 - April 2025</div>
+                </div>
+                <p class="exp-description">
+                    Worked as a Data Analyst Intern at Learn Basics, where I analyzed datasets, built dashboards, and generated insights to support learning outcomes. Developed SQL queries, created visual reports, and assisted in automating data workflows to improve decision-making efficiency.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section fade-in-section" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <a href="https://github.com/kailash-N/Inventory-Management" target="_blank" class="project-card">
+                <h3 class="project-title">Inventory Management System</h3>
+                <p class="project-description">
+                    Developing a scalable backend system using Flask and OOP principles to handle inventory tracking. Built REST APIs and optimized database design for smooth transaction processing.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">RestAPI</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                </div>
+            </a>
+            
+            <!-- Project Card 2 -->
+            <a href="https://github.com/kailash-N/Kaggle_Personality_Predictor" target="_blank" class="project-card">
+                <h3 class="project-title">Personality classifier</h3>
+                <p class="project-description">
+                    Developed an XGBoost-based classification model for kaggle competition achieving 97% accuracy in predicting personality traits. Implemented feature selection, hyperparameter tuning, and comparative model evaluation, demonstrating strong proficiency in Machine Learning.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Scikit-Learn</span>
+                    <span class="tech-tag">XGBoost</span>
+                </div>
+            </a>
+            
+            <!-- Project Card 3 -->
+            <a href="https://www.youtube.com/watch?v=TMd-HdEQPSc" target="_blank" class="project-card">
+                <h3 class="project-title">Terminal Based Quiz App</h3>
+                <p class="project-description">
+                    A simple yet effective quiz application developed in Python, designed for Harvard's CS50p course. This project highlights my foundational programming skills and ability to create interactive command-line tools.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Unit testing</span>
+                    <span class="tech-tag">Terminal</span>
+                    <span class="tech-tag">Python</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Certification Section -->
+    <section class="certification-section fade-in-section" id="certification">
+        <h2 class="section-title">Certifications</h2>
+        <div class="cert-grid">
+            <!-- Certification Card 1 -->
+            <a href="https://coursera.org/share/03e3e8581c9daadb45ebfaccf67170db" target="_blank" class="cert-card">
+                <img src="images/ML Certificate-1.jpg" alt="Certification" class="cert-image">
+                <div class="cert-name">Machine Learning Specialization</div>
+                <div class="cert-issuer">Coursera / Stanford</div>
+                <div class="cert-date">July 2024</div>
+            </a>
+            
+            <!-- Certification Card 2 -->
+            <a href="https://coursera.org/share/791d0107fbd5d0befc542610a05ee1c5" target="_blank" class="cert-card">
+                <img src="images/google DA-1.jpg" alt="Certification" class="cert-image">
+                <div class="cert-name">Google Data Analytics</div>
+                <div class="cert-issuer">Coursera / Google</div>
+                <div class="cert-date">Jan 2025</div>
+            </a>
+            
+            <!-- Certification Card 3 -->
+            <a href="https://certificates.cs50.io/b1ab6b1e-8adc-4ca4-b4e4-b1d5e0f180f8.pdf?size=letter" target="_blank" class="cert-card">
+                <img src="images/CS50P-1.jpg" alt="Certification" class="cert-image">
+                <div class="cert-name">Python CS50</div>
+                <div class="cert-issuer">Harvard University</div>
+                <div class="cert-date">May 2024</div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section fade-in-section" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-label">Email</div>
+                    <a href="mailto:kailash.n2004@gmail.com" class="contact-value">kailash.n2004@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">Phone</div>
+                    <a href="tel:+919342015505" class="contact-value">+91 93420 15505</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">Location</div>
+                    <span class="contact-value">Erode, India</span>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/kailash-n2004/" target="_blank" class="social-link" title="LinkedIn">in</a>
+                <a href="https://github.com/kailash-N" target="_blank" class="social-link" title="GitHub">git</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Kailash N</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const hamburger = document.querySelector('.hamburger');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        }
+
+        // Scroll animation for fade-in sections
+        const faders = document.querySelectorAll('.fade-in-section');
+
+        const appearOptions = {
+            threshold: 0.15,
+            rootMargin: "0px 0px -100px 0px"
+        };
+
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('is-visible');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+</body>
+</html>
